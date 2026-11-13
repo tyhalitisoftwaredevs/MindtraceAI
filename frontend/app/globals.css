@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f7f8f4;
+  color: #172d2a;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, textarea, select { font: inherit; }
+::selection { background: #d7ecdf; color: #173d31; }
+
+.soft-grid {
+  background-image: radial-gradient(rgba(51, 99, 78, .12) .8px, transparent .8px);
+  background-size: 15px 15px;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #225c4b;
+  outline-offset: 3px;
+}
